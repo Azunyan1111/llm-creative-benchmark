@@ -1,0 +1,62 @@
+[
+  {
+    "id": "meta/muse-wonder",
+    "family": "Meta Muse",
+    "reasoning_mandatory": true,
+    "supported_efforts": [
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinking_effort": "high",
+    "no_thinking_effort": "minimal",
+    "no_thinking_is_true_off": false
+  },
+  {
+    "id": "meta/muse-spark-1.3",
+    "family": "Meta Muse",
+    "reasoning_mandatory": true,
+    "supported_efforts": [
+      "minimal",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "thinking_effort": "high",
+    "no_thinking_effort": "minimal",
+    "no_thinking_is_true_off": false
+  },
+  {
+    "id": "meta/muse-spark-open",
+    "family": "Meta Muse",
+    "reasoning_mandatory": true,
+    "supported_efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "thinking_effort": "high",
+    "no_thinking_effort": "low",
+    "no_thinking_is_true_off": false
+  },
+  {
+    "id": "meta/muse-glimmer-30b",
+    "family": "Meta Muse",
+    "reasoning_mandatory": true,
+    "supported_efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "thinking_effort": "high",
+    "no_thinking_effort": "low",
+    "no_thinking_is_true_off": false
+  }
+]

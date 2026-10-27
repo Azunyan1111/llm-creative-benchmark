@@ -1,0 +1,4 @@
+# Large embedding files (download with `go run ./cmd/datbench prepare`)
+/data/
+# Build output
+/bin/
