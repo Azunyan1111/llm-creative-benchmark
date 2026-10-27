@@ -1,6 +1,6 @@
 # LLM Creativity Benchmark (DAT) — Ranking
 
-Generated: 2026-10-27 11:42 JST · Trials: 1000 · Total cost: $14.2572
+Generated: 2026-10-27 16:09 JST · Trials: 1040 · Total cost: $15.7126
 
 Score = Divergent Association Task (Olson et al., 2021): mean cosine distance of the first 7 valid words × 100. Higher is more divergent (humans average ≈ 78, SD ≈ 6).
 
@@ -12,6 +12,7 @@ Score = Divergent Association Task (Olson et al., 2021): mean cosine distance of
 
 | Model | Family | thinking (mean ± SD) | no-thinking (mean ± SD) | Δ (thinking − no-thinking) |
 |---|---|---:|---:|---:|
+| google/gemini-4-argon | Gemini Argon | 90.30 ± 1.58 (high) | 86.35 ± 1.69 (low) | +3.95 |
 | google/gemini-3.8-flash | Gemini Flash | 89.17 ± 2.84 (high) | 87.64 ± 2.97 (low) | +1.53 |
 | anthropic/claude-opus-5.5 | Claude 5.5 | 88.07 ± 1.44 (high) | 87.34 ± 0.34 (low) | +0.73 |
 | google/gemini-3.5-flash | Gemini Flash | 84.05 ± 2.74 (high) | 88.04 ± 2.00 (minimal) | -3.99 |
@@ -42,31 +43,32 @@ Score = Divergent Association Task (Olson et al., 2021): mean cosine distance of
 
 | Rank | Model | Family | Effort | Mean | SD | Min | Max | Scored/N | Errors | Unscorable | Avg reasoning tokens |
 |---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | google/gemini-3.8-flash | Gemini Flash | high | 89.17 | 2.84 | 85.40 | 94.12 | 10/10 | 0 | 0 | 9499 |
-| 2 | anthropic/claude-opus-5.5 | Claude 5.5 | high | 88.07 | 1.44 | 86.33 | 90.65 | 10/10 | 0 | 0 | 287 |
-| 3 | google/gemini-3.7-flash | Gemini Flash | high | 87.68 | 1.20 | 85.69 | 89.39 | 10/10 | 0 | 0 | 2108 |
-| 4 | openai/gpt-6.1-sol | GPT-6.1 | high | 87.33 | 2.03 | 84.50 | 89.84 | 10/10 | 0 | 0 | 398 |
-| 5 | anthropic/claude-sonnet-5.5 | Claude 5.5 | high | 86.62 | 2.26 | 83.96 | 91.82 | 10/10 | 0 | 0 | 0 |
-| 6 | google/gemini-3.6-flash | Gemini Flash | high | 86.61 | 2.13 | 83.92 | 90.11 | 10/10 | 0 | 0 | 2660 |
-| 7 | openai/gpt-6-astra | GPT-6 | high | 86.41 | 1.47 | 84.66 | 88.86 | 10/10 | 0 | 0 | 444 |
-| 8 | anthropic/claude-fable-5.1 | Claude Fable | high | 86.08 | 1.55 | 83.22 | 87.47 | 10/10 | 0 | 0 | 335 |
-| 9 | meta/muse-wonder | Meta Muse | high | 85.31 | 3.43 | 78.39 | 89.01 | 10/10 | 0 | 0 | 3068 |
-| 10 | anthropic/claude-fable-5 | Claude Fable | high | 84.79 | 1.66 | 82.62 | 88.15 | 10/10 | 0 | 0 | 67 |
-| 11 | google/gemini-3.5-flash-lite | Gemini Flash | high | 84.15 | 3.57 | 79.67 | 91.51 | 10/10 | 0 | 0 | 1818 |
-| 12 | google/gemini-3.5-flash | Gemini Flash | high | 84.05 | 2.74 | 80.08 | 89.22 | 10/10 | 0 | 0 | 2153 |
-| 13 | openai/gpt-5.6-sol | GPT-5.6 | high | 83.59 | 3.34 | 77.72 | 87.60 | 10/10 | 0 | 0 | 205 |
-| 14 | anthropic/claude-haiku-5.5 | Claude 5.5 | high | 82.73 | 2.03 | 79.77 | 85.63 | 10/10 | 0 | 0 | 564 |
-| 15 | openai/gpt-5.6-luna | GPT-5.6 | high | 80.86 | 2.80 | 75.73 | 85.36 | 10/10 | 0 | 0 | 286 |
-| 16 | x-ai/grok-4.6 | Grok | high | 80.47 | 2.71 | 75.13 | 83.94 | 10/10 | 0 | 0 | 1981 |
-| 17 | meta/muse-spark-open | Meta Muse | high | 79.65 | 3.00 | 74.99 | 84.67 | 10/10 | 0 | 0 | 2038 |
-| 18 | x-ai/grok-4.7 | Grok | high | 78.77 | 3.41 | 72.10 | 83.28 | 10/10 | 0 | 0 | 1859 |
-| 19 | openai/gpt-5.6-terra | GPT-5.6 | high | 77.31 | 2.60 | 74.06 | 80.94 | 10/10 | 0 | 0 | 20 |
-| 20 | meta/muse-spark-1.3 | Meta Muse | high | 76.16 | 2.60 | 72.23 | 80.35 | 10/10 | 0 | 0 | 4899 |
-| 21 | x-ai/grok-4.20-multi-agent | Grok | high | 75.69 | 2.29 | 72.17 | 79.35 | 10/10 | 0 | 0 | 33358 |
-| 22 | x-ai/grok-4.20 | Grok | enabled | 74.93 | 2.74 | 71.55 | 79.90 | 10/10 | 0 | 0 | 1882 |
-| 23 | x-ai/grok-4.5 | Grok | high | 74.85 | 3.76 | 69.24 | 81.00 | 10/10 | 0 | 0 | 749 |
-| 24 | x-ai/grok-4.3 | Grok | high | 74.57 | 2.11 | 70.16 | 77.03 | 10/10 | 0 | 0 | 972 |
-| 25 | meta/muse-glimmer-30b | Meta Muse | high | 72.56 | 2.91 | 67.62 | 76.78 | 10/10 | 0 | 0 | 938 |
+| 1 | google/gemini-4-argon | Gemini Argon | high | 90.30 | 1.58 | 88.61 | 92.61 | 9/10 | 0 | 1 | 4442 |
+| 2 | google/gemini-3.8-flash | Gemini Flash | high | 89.17 | 2.84 | 85.40 | 94.12 | 10/10 | 0 | 0 | 9499 |
+| 3 | anthropic/claude-opus-5.5 | Claude 5.5 | high | 88.07 | 1.44 | 86.33 | 90.65 | 10/10 | 0 | 0 | 287 |
+| 4 | google/gemini-3.7-flash | Gemini Flash | high | 87.68 | 1.20 | 85.69 | 89.39 | 10/10 | 0 | 0 | 2108 |
+| 5 | openai/gpt-6.1-sol | GPT-6.1 | high | 87.33 | 2.03 | 84.50 | 89.84 | 10/10 | 0 | 0 | 398 |
+| 6 | anthropic/claude-sonnet-5.5 | Claude 5.5 | high | 86.62 | 2.26 | 83.96 | 91.82 | 10/10 | 0 | 0 | 0 |
+| 7 | google/gemini-3.6-flash | Gemini Flash | high | 86.61 | 2.13 | 83.92 | 90.11 | 10/10 | 0 | 0 | 2660 |
+| 8 | openai/gpt-6-astra | GPT-6 | high | 86.41 | 1.47 | 84.66 | 88.86 | 10/10 | 0 | 0 | 444 |
+| 9 | anthropic/claude-fable-5.1 | Claude Fable | high | 86.08 | 1.55 | 83.22 | 87.47 | 10/10 | 0 | 0 | 335 |
+| 10 | meta/muse-wonder | Meta Muse | high | 85.31 | 3.43 | 78.39 | 89.01 | 10/10 | 0 | 0 | 3068 |
+| 11 | anthropic/claude-fable-5 | Claude Fable | high | 84.79 | 1.66 | 82.62 | 88.15 | 10/10 | 0 | 0 | 67 |
+| 12 | google/gemini-3.5-flash-lite | Gemini Flash | high | 84.15 | 3.57 | 79.67 | 91.51 | 10/10 | 0 | 0 | 1818 |
+| 13 | google/gemini-3.5-flash | Gemini Flash | high | 84.05 | 2.74 | 80.08 | 89.22 | 10/10 | 0 | 0 | 2153 |
+| 14 | openai/gpt-5.6-sol | GPT-5.6 | high | 83.59 | 3.34 | 77.72 | 87.60 | 10/10 | 0 | 0 | 205 |
+| 15 | anthropic/claude-haiku-5.5 | Claude 5.5 | high | 82.73 | 2.03 | 79.77 | 85.63 | 10/10 | 0 | 0 | 564 |
+| 16 | openai/gpt-5.6-luna | GPT-5.6 | high | 80.86 | 2.80 | 75.73 | 85.36 | 10/10 | 0 | 0 | 286 |
+| 17 | x-ai/grok-4.6 | Grok | high | 80.47 | 2.71 | 75.13 | 83.94 | 10/10 | 0 | 0 | 1981 |
+| 18 | meta/muse-spark-open | Meta Muse | high | 79.65 | 3.00 | 74.99 | 84.67 | 10/10 | 0 | 0 | 2038 |
+| 19 | x-ai/grok-4.7 | Grok | high | 78.77 | 3.41 | 72.10 | 83.28 | 10/10 | 0 | 0 | 1859 |
+| 20 | openai/gpt-5.6-terra | GPT-5.6 | high | 77.31 | 2.60 | 74.06 | 80.94 | 10/10 | 0 | 0 | 20 |
+| 21 | meta/muse-spark-1.3 | Meta Muse | high | 76.16 | 2.60 | 72.23 | 80.35 | 10/10 | 0 | 0 | 4899 |
+| 22 | x-ai/grok-4.20-multi-agent | Grok | high | 75.69 | 2.29 | 72.17 | 79.35 | 10/10 | 0 | 0 | 33358 |
+| 23 | x-ai/grok-4.20 | Grok | enabled | 74.93 | 2.74 | 71.55 | 79.90 | 10/10 | 0 | 0 | 1882 |
+| 24 | x-ai/grok-4.5 | Grok | high | 74.85 | 3.76 | 69.24 | 81.00 | 10/10 | 0 | 0 | 749 |
+| 25 | x-ai/grok-4.3 | Grok | high | 74.57 | 2.11 | 70.16 | 77.03 | 10/10 | 0 | 0 | 972 |
+| 26 | meta/muse-glimmer-30b | Meta Muse | high | 72.56 | 2.91 | 67.62 | 76.78 | 10/10 | 0 | 0 | 938 |
 
 ### no-thinking
 
@@ -77,31 +79,33 @@ Score = Divergent Association Task (Olson et al., 2021): mean cosine distance of
 | 3 | google/gemini-3.8-flash | Gemini Flash | low | 87.64 | 2.97 | 84.57 | 92.75 | 10/10 | 0 | 0 | 962 |
 | 4 | anthropic/claude-opus-5.5 | Claude 5.5 | low | 87.34 | 0.34 | 87.14 | 88.07 | 10/10 | 0 | 0 | 0 |
 | 5 | google/gemini-3.7-flash | Gemini Flash | low | 87.10 | 2.90 | 82.27 | 91.88 | 10/10 | 0 | 0 | 757 |
-| 6 | openai/gpt-6-astra | GPT-6 | low | 86.31 | 2.51 | 83.18 | 90.23 | 10/10 | 0 | 0 | 101 |
-| 7 | anthropic/claude-sonnet-5.5 | Claude 5.5 | low | 86.13 | 2.95 | 82.35 | 91.19 | 10/10 | 0 | 0 | 0 |
-| 8 | anthropic/claude-fable-5.1 | Claude Fable | low | 85.89 | 2.32 | 81.19 | 88.23 | 10/10 | 0 | 0 | 0 |
-| 9 | openai/gpt-6.1-sol | GPT-6.1 | low | 85.24 | 2.40 | 80.87 | 88.48 | 10/10 | 0 | 0 | 102 |
-| 10 | anthropic/claude-haiku-5.5 | Claude 5.5 | none | 84.91 | 2.50 | 79.98 | 87.46 | 10/10 | 0 | 0 | 0 |
-| 11 | anthropic/claude-fable-5 | Claude Fable | low | 84.84 | 0.11 | 84.78 | 85.08 | 10/10 | 0 | 0 | 13 |
-| 12 | openai/gpt-5.6-sol | GPT-5.6 | none | 82.67 | 2.88 | 78.23 | 86.97 | 10/10 | 0 | 0 | 0 |
-| 13 | openai/gpt-5.6-luna | GPT-5.6 | none | 82.18 | 2.48 | 78.06 | 85.22 | 10/10 | 0 | 0 | 0 |
-| 14 | google/gemini-3.5-flash-lite | Gemini Flash | minimal | 80.63 | 2.86 | 75.15 | 84.88 | 10/10 | 0 | 0 | 0 |
-| 15 | meta/muse-wonder | Meta Muse | minimal | 79.94 | 3.86 | 72.64 | 84.31 | 10/10 | 0 | 0 | 162 |
-| 16 | x-ai/grok-4.6 | Grok | low | 79.73 | 2.56 | 76.86 | 85.77 | 10/10 | 0 | 0 | 697 |
-| 17 | openai/gpt-5.6-terra | GPT-5.6 | none | 78.12 | 3.17 | 71.44 | 81.59 | 10/10 | 0 | 0 | 0 |
-| 18 | x-ai/grok-4.7 | Grok | low | 77.99 | 3.19 | 73.43 | 84.01 | 10/10 | 0 | 0 | 426 |
-| 19 | x-ai/grok-4.5 | Grok | low | 77.12 | 4.40 | 73.21 | 85.50 | 10/10 | 0 | 0 | 378 |
-| 20 | x-ai/grok-4.20-multi-agent | Grok | low | 76.86 | 4.08 | 71.15 | 83.82 | 10/10 | 0 | 0 | 8738 |
-| 21 | meta/muse-spark-open | Meta Muse | low | 76.45 | 2.71 | 72.57 | 82.71 | 10/10 | 0 | 0 | 290 |
-| 22 | meta/muse-spark-1.3 | Meta Muse | minimal | 75.52 | 4.09 | 70.85 | 82.77 | 10/10 | 0 | 0 | 136 |
-| 23 | meta/muse-glimmer-30b | Meta Muse | low | 73.66 | 2.10 | 69.50 | 77.17 | 10/10 | 0 | 0 | 177 |
-| 24 | x-ai/grok-4.20 | Grok | disabled | 73.53 | 1.87 | 69.96 | 75.12 | 10/10 | 0 | 0 | 0 |
-| 25 | x-ai/grok-4.3 | Grok | none | 72.25 | 3.70 | 67.32 | 76.10 | 10/10 | 0 | 0 | 0 |
+| 6 | google/gemini-4-argon | Gemini Argon | low | 86.35 | 1.69 | 83.82 | 89.37 | 10/10 | 0 | 0 | 0 |
+| 7 | openai/gpt-6-astra | GPT-6 | low | 86.31 | 2.51 | 83.18 | 90.23 | 10/10 | 0 | 0 | 101 |
+| 8 | anthropic/claude-sonnet-5.5 | Claude 5.5 | low | 86.13 | 2.95 | 82.35 | 91.19 | 10/10 | 0 | 0 | 0 |
+| 9 | anthropic/claude-fable-5.1 | Claude Fable | low | 85.89 | 2.32 | 81.19 | 88.23 | 10/10 | 0 | 0 | 0 |
+| 10 | openai/gpt-6.1-sol | GPT-6.1 | low | 85.24 | 2.40 | 80.87 | 88.48 | 10/10 | 0 | 0 | 102 |
+| 11 | anthropic/claude-haiku-5.5 | Claude 5.5 | none | 84.91 | 2.50 | 79.98 | 87.46 | 10/10 | 0 | 0 | 0 |
+| 12 | anthropic/claude-fable-5 | Claude Fable | low | 84.84 | 0.11 | 84.78 | 85.08 | 10/10 | 0 | 0 | 13 |
+| 13 | openai/gpt-5.6-sol | GPT-5.6 | none | 82.67 | 2.88 | 78.23 | 86.97 | 10/10 | 0 | 0 | 0 |
+| 14 | openai/gpt-5.6-luna | GPT-5.6 | none | 82.18 | 2.48 | 78.06 | 85.22 | 10/10 | 0 | 0 | 0 |
+| 15 | google/gemini-3.5-flash-lite | Gemini Flash | minimal | 80.63 | 2.86 | 75.15 | 84.88 | 10/10 | 0 | 0 | 0 |
+| 16 | meta/muse-wonder | Meta Muse | minimal | 79.94 | 3.86 | 72.64 | 84.31 | 10/10 | 0 | 0 | 162 |
+| 17 | x-ai/grok-4.6 | Grok | low | 79.73 | 2.56 | 76.86 | 85.77 | 10/10 | 0 | 0 | 697 |
+| 18 | openai/gpt-5.6-terra | GPT-5.6 | none | 78.12 | 3.17 | 71.44 | 81.59 | 10/10 | 0 | 0 | 0 |
+| 19 | x-ai/grok-4.7 | Grok | low | 77.99 | 3.19 | 73.43 | 84.01 | 10/10 | 0 | 0 | 426 |
+| 20 | x-ai/grok-4.5 | Grok | low | 77.12 | 4.40 | 73.21 | 85.50 | 10/10 | 0 | 0 | 378 |
+| 21 | x-ai/grok-4.20-multi-agent | Grok | low | 76.86 | 4.08 | 71.15 | 83.82 | 10/10 | 0 | 0 | 8738 |
+| 22 | meta/muse-spark-open | Meta Muse | low | 76.45 | 2.71 | 72.57 | 82.71 | 10/10 | 0 | 0 | 290 |
+| 23 | meta/muse-spark-1.3 | Meta Muse | minimal | 75.52 | 4.09 | 70.85 | 82.77 | 10/10 | 0 | 0 | 136 |
+| 24 | meta/muse-glimmer-30b | Meta Muse | low | 73.66 | 2.10 | 69.50 | 77.17 | 10/10 | 0 | 0 | 177 |
+| 25 | x-ai/grok-4.20 | Grok | disabled | 73.53 | 1.87 | 69.96 | 75.12 | 10/10 | 0 | 0 | 0 |
+| 26 | x-ai/grok-4.3 | Grok | none | 72.25 | 3.70 | 67.32 | 76.10 | 10/10 | 0 | 0 | 0 |
 
 ## 日本語
 
 | Model | Family | thinking (mean ± SD) | no-thinking (mean ± SD) | Δ (thinking − no-thinking) |
 |---|---|---:|---:|---:|
+| google/gemini-4-argon | Gemini Argon | 80.49 ± 1.78 (high) | 83.52 ± 2.03 (low) | -3.03 |
 | google/gemini-3.8-flash | Gemini Flash | 81.53 ± 1.89 (high) | 82.82 ± 2.62 (low) | -1.30 |
 | openai/gpt-6-astra | GPT-6 | 82.00 ± 1.50 (high) | 81.60 ± 1.74 (low) | +0.40 |
 | openai/gpt-6.1-sol | GPT-6.1 | 80.74 ± 1.94 (high) | 81.61 ± 0.89 (low) | -0.86 |
@@ -139,54 +143,56 @@ Score = Divergent Association Task (Olson et al., 2021): mean cosine distance of
 | 5 | openai/gpt-6.1-sol | GPT-6.1 | high | 80.74 | 1.94 | 77.51 | 83.61 | 10/10 | 0 | 0 | 1064 |
 | 6 | google/gemini-3.6-flash | Gemini Flash | high | 80.74 | 2.26 | 76.92 | 85.33 | 10/10 | 0 | 0 | 2989 |
 | 7 | openai/gpt-5.6-sol | GPT-5.6 | high | 80.56 | 1.95 | 77.63 | 83.98 | 10/10 | 0 | 0 | 924 |
-| 8 | meta/muse-wonder | Meta Muse | high | 80.46 | 1.42 | 78.57 | 82.40 | 10/10 | 0 | 0 | 4179 |
-| 9 | anthropic/claude-fable-5.1 | Claude Fable | high | 80.46 | 2.15 | 77.55 | 84.21 | 10/10 | 0 | 0 | 524 |
-| 10 | x-ai/grok-4.7 | Grok | high | 80.08 | 2.25 | 74.62 | 83.16 | 10/10 | 0 | 0 | 3262 |
-| 11 | anthropic/claude-haiku-5.5 | Claude 5.5 | high | 79.70 | 1.24 | 76.83 | 81.00 | 10/10 | 0 | 0 | 801 |
-| 12 | anthropic/claude-sonnet-5.5 | Claude 5.5 | high | 79.64 | 1.98 | 76.00 | 83.15 | 10/10 | 0 | 0 | 124 |
-| 13 | anthropic/claude-opus-5.5 | Claude 5.5 | high | 79.59 | 1.31 | 78.07 | 81.98 | 10/10 | 0 | 0 | 354 |
-| 14 | anthropic/claude-fable-5 | Claude Fable | high | 79.45 | 2.28 | 76.62 | 82.80 | 10/10 | 0 | 0 | 256 |
-| 15 | meta/muse-glimmer-30b | Meta Muse | high | 78.35 | 1.85 | 74.36 | 80.98 | 10/10 | 0 | 0 | 2150 |
-| 16 | openai/gpt-5.6-terra | GPT-5.6 | high | 78.07 | 2.08 | 74.88 | 80.40 | 10/10 | 0 | 0 | 500 |
-| 17 | meta/muse-spark-open | Meta Muse | high | 78.05 | 2.32 | 73.65 | 80.55 | 10/10 | 0 | 0 | 2103 |
-| 18 | google/gemini-3.5-flash-lite | Gemini Flash | high | 77.86 | 2.64 | 73.19 | 81.03 | 10/10 | 0 | 0 | 1311 |
-| 19 | meta/muse-spark-1.3 | Meta Muse | high | 77.72 | 2.20 | 75.60 | 81.52 | 9/10 | 0 | 1 | 6155 |
-| 20 | openai/gpt-5.6-luna | GPT-5.6 | high | 77.68 | 1.45 | 75.24 | 79.70 | 10/10 | 0 | 0 | 908 |
-| 21 | x-ai/grok-4.20-multi-agent | Grok | high | 77.18 | 1.37 | 74.18 | 78.27 | 10/10 | 0 | 0 | 49833 |
-| 22 | x-ai/grok-4.6 | Grok | high | 77.02 | 2.13 | 74.24 | 81.61 | 10/10 | 0 | 0 | 3044 |
-| 23 | x-ai/grok-4.20 | Grok | enabled | 76.74 | 1.81 | 74.57 | 79.73 | 10/10 | 0 | 0 | 2367 |
-| 24 | x-ai/grok-4.5 | Grok | high | 76.69 | 1.34 | 73.77 | 78.68 | 10/10 | 0 | 0 | 1069 |
-| 25 | x-ai/grok-4.3 | Grok | high | 74.23 | 2.14 | 70.69 | 76.92 | 10/10 | 0 | 0 | 1143 |
+| 8 | google/gemini-4-argon | Gemini Argon | high | 80.49 | 1.78 | 77.96 | 82.72 | 6/10 | 0 | 4 | 6540 |
+| 9 | meta/muse-wonder | Meta Muse | high | 80.46 | 1.42 | 78.57 | 82.40 | 10/10 | 0 | 0 | 4179 |
+| 10 | anthropic/claude-fable-5.1 | Claude Fable | high | 80.46 | 2.15 | 77.55 | 84.21 | 10/10 | 0 | 0 | 524 |
+| 11 | x-ai/grok-4.7 | Grok | high | 80.08 | 2.25 | 74.62 | 83.16 | 10/10 | 0 | 0 | 3262 |
+| 12 | anthropic/claude-haiku-5.5 | Claude 5.5 | high | 79.70 | 1.24 | 76.83 | 81.00 | 10/10 | 0 | 0 | 801 |
+| 13 | anthropic/claude-sonnet-5.5 | Claude 5.5 | high | 79.64 | 1.98 | 76.00 | 83.15 | 10/10 | 0 | 0 | 124 |
+| 14 | anthropic/claude-opus-5.5 | Claude 5.5 | high | 79.59 | 1.31 | 78.07 | 81.98 | 10/10 | 0 | 0 | 354 |
+| 15 | anthropic/claude-fable-5 | Claude Fable | high | 79.45 | 2.28 | 76.62 | 82.80 | 10/10 | 0 | 0 | 256 |
+| 16 | meta/muse-glimmer-30b | Meta Muse | high | 78.35 | 1.85 | 74.36 | 80.98 | 10/10 | 0 | 0 | 2150 |
+| 17 | openai/gpt-5.6-terra | GPT-5.6 | high | 78.07 | 2.08 | 74.88 | 80.40 | 10/10 | 0 | 0 | 500 |
+| 18 | meta/muse-spark-open | Meta Muse | high | 78.05 | 2.32 | 73.65 | 80.55 | 10/10 | 0 | 0 | 2103 |
+| 19 | google/gemini-3.5-flash-lite | Gemini Flash | high | 77.86 | 2.64 | 73.19 | 81.03 | 10/10 | 0 | 0 | 1311 |
+| 20 | meta/muse-spark-1.3 | Meta Muse | high | 77.72 | 2.20 | 75.60 | 81.52 | 9/10 | 0 | 1 | 6155 |
+| 21 | openai/gpt-5.6-luna | GPT-5.6 | high | 77.68 | 1.45 | 75.24 | 79.70 | 10/10 | 0 | 0 | 908 |
+| 22 | x-ai/grok-4.20-multi-agent | Grok | high | 77.18 | 1.37 | 74.18 | 78.27 | 10/10 | 0 | 0 | 49833 |
+| 23 | x-ai/grok-4.6 | Grok | high | 77.02 | 2.13 | 74.24 | 81.61 | 10/10 | 0 | 0 | 3044 |
+| 24 | x-ai/grok-4.20 | Grok | enabled | 76.74 | 1.81 | 74.57 | 79.73 | 10/10 | 0 | 0 | 2367 |
+| 25 | x-ai/grok-4.5 | Grok | high | 76.69 | 1.34 | 73.77 | 78.68 | 10/10 | 0 | 0 | 1069 |
+| 26 | x-ai/grok-4.3 | Grok | high | 74.23 | 2.14 | 70.69 | 76.92 | 10/10 | 0 | 0 | 1143 |
 
 ### no-thinking
 
 | Rank | Model | Family | Effort | Mean | SD | Min | Max | Scored/N | Errors | Unscorable | Avg reasoning tokens |
 |---:|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 1 | google/gemini-3.8-flash | Gemini Flash | low | 82.82 | 2.62 | 79.65 | 87.49 | 10/10 | 0 | 0 | 474 |
-| 2 | openai/gpt-6.1-sol | GPT-6.1 | low | 81.61 | 0.89 | 80.35 | 83.06 | 10/10 | 0 | 0 | 189 |
-| 3 | openai/gpt-6-astra | GPT-6 | low | 81.60 | 1.74 | 79.23 | 84.68 | 10/10 | 0 | 0 | 181 |
-| 4 | google/gemini-3.7-flash | Gemini Flash | low | 80.57 | 1.68 | 78.02 | 83.52 | 10/10 | 0 | 0 | 479 |
-| 5 | anthropic/claude-sonnet-5.5 | Claude 5.5 | low | 80.50 | 1.64 | 77.73 | 83.21 | 10/10 | 0 | 0 | 0 |
-| 6 | anthropic/claude-opus-5.5 | Claude 5.5 | low | 79.73 | 1.44 | 77.72 | 82.06 | 10/10 | 0 | 0 | 0 |
-| 7 | openai/gpt-5.6-luna | GPT-5.6 | none | 79.61 | 0.97 | 77.83 | 80.74 | 9/10 | 0 | 1 | 0 |
-| 8 | anthropic/claude-fable-5 | Claude Fable | low | 79.53 | 2.49 | 76.37 | 83.67 | 10/10 | 0 | 0 | 10 |
-| 9 | google/gemini-3.6-flash | Gemini Flash | minimal | 78.27 | 1.60 | 75.83 | 81.27 | 10/10 | 0 | 0 | 0 |
-| 10 | anthropic/claude-fable-5.1 | Claude Fable | low | 78.24 | 1.67 | 75.93 | 80.96 | 10/10 | 0 | 0 | 0 |
-| 11 | anthropic/claude-haiku-5.5 | Claude 5.5 | none | 78.17 | 2.06 | 75.16 | 81.08 | 10/10 | 0 | 0 | 0 |
-| 12 | openai/gpt-5.6-sol | GPT-5.6 | none | 78.00 | 2.32 | 74.88 | 81.21 | 10/10 | 0 | 0 | 0 |
-| 13 | meta/muse-spark-open | Meta Muse | low | 77.92 | 1.66 | 75.21 | 81.04 | 10/10 | 0 | 0 | 383 |
-| 14 | x-ai/grok-4.6 | Grok | low | 77.79 | 1.54 | 74.57 | 79.94 | 10/10 | 0 | 0 | 811 |
-| 15 | google/gemini-3.5-flash-lite | Gemini Flash | minimal | 77.72 | 2.65 | 73.84 | 82.41 | 10/10 | 0 | 0 | 0 |
-| 16 | meta/muse-wonder | Meta Muse | minimal | 77.50 | 3.62 | 70.70 | 81.87 | 10/10 | 0 | 0 | 237 |
-| 17 | x-ai/grok-4.5 | Grok | low | 77.02 | 2.38 | 73.64 | 81.07 | 10/10 | 0 | 0 | 704 |
-| 18 | x-ai/grok-4.7 | Grok | low | 77.02 | 2.31 | 73.56 | 81.33 | 10/10 | 0 | 0 | 753 |
-| 19 | x-ai/grok-4.20-multi-agent | Grok | low | 76.68 | 2.23 | 73.56 | 79.82 | 10/10 | 0 | 0 | 12316 |
-| 20 | google/gemini-3.5-flash | Gemini Flash | minimal | 76.56 | 2.57 | 71.71 | 80.13 | 10/10 | 0 | 0 | 0 |
-| 21 | x-ai/grok-4.20 | Grok | disabled | 75.58 | 2.03 | 71.53 | 78.71 | 10/10 | 0 | 0 | 0 |
-| 22 | openai/gpt-5.6-terra | GPT-5.6 | none | 75.57 | 1.60 | 72.94 | 78.75 | 10/10 | 0 | 0 | 0 |
-| 23 | meta/muse-spark-1.3 | Meta Muse | minimal | 75.07 | 3.77 | 68.61 | 80.67 | 10/10 | 0 | 0 | 279 |
-| 24 | meta/muse-glimmer-30b | Meta Muse | low | 74.82 | 1.71 | 72.37 | 77.68 | 10/10 | 0 | 0 | 290 |
-| 25 | x-ai/grok-4.3 | Grok | none | 74.64 | 3.52 | 69.51 | 79.96 | 10/10 | 0 | 0 | 0 |
+| 1 | google/gemini-4-argon | Gemini Argon | low | 83.52 | 2.03 | 80.03 | 86.56 | 10/10 | 0 | 0 | 0 |
+| 2 | google/gemini-3.8-flash | Gemini Flash | low | 82.82 | 2.62 | 79.65 | 87.49 | 10/10 | 0 | 0 | 474 |
+| 3 | openai/gpt-6.1-sol | GPT-6.1 | low | 81.61 | 0.89 | 80.35 | 83.06 | 10/10 | 0 | 0 | 189 |
+| 4 | openai/gpt-6-astra | GPT-6 | low | 81.60 | 1.74 | 79.23 | 84.68 | 10/10 | 0 | 0 | 181 |
+| 5 | google/gemini-3.7-flash | Gemini Flash | low | 80.57 | 1.68 | 78.02 | 83.52 | 10/10 | 0 | 0 | 479 |
+| 6 | anthropic/claude-sonnet-5.5 | Claude 5.5 | low | 80.50 | 1.64 | 77.73 | 83.21 | 10/10 | 0 | 0 | 0 |
+| 7 | anthropic/claude-opus-5.5 | Claude 5.5 | low | 79.73 | 1.44 | 77.72 | 82.06 | 10/10 | 0 | 0 | 0 |
+| 8 | openai/gpt-5.6-luna | GPT-5.6 | none | 79.61 | 0.97 | 77.83 | 80.74 | 9/10 | 0 | 1 | 0 |
+| 9 | anthropic/claude-fable-5 | Claude Fable | low | 79.53 | 2.49 | 76.37 | 83.67 | 10/10 | 0 | 0 | 10 |
+| 10 | google/gemini-3.6-flash | Gemini Flash | minimal | 78.27 | 1.60 | 75.83 | 81.27 | 10/10 | 0 | 0 | 0 |
+| 11 | anthropic/claude-fable-5.1 | Claude Fable | low | 78.24 | 1.67 | 75.93 | 80.96 | 10/10 | 0 | 0 | 0 |
+| 12 | anthropic/claude-haiku-5.5 | Claude 5.5 | none | 78.17 | 2.06 | 75.16 | 81.08 | 10/10 | 0 | 0 | 0 |
+| 13 | openai/gpt-5.6-sol | GPT-5.6 | none | 78.00 | 2.32 | 74.88 | 81.21 | 10/10 | 0 | 0 | 0 |
+| 14 | meta/muse-spark-open | Meta Muse | low | 77.92 | 1.66 | 75.21 | 81.04 | 10/10 | 0 | 0 | 383 |
+| 15 | x-ai/grok-4.6 | Grok | low | 77.79 | 1.54 | 74.57 | 79.94 | 10/10 | 0 | 0 | 811 |
+| 16 | google/gemini-3.5-flash-lite | Gemini Flash | minimal | 77.72 | 2.65 | 73.84 | 82.41 | 10/10 | 0 | 0 | 0 |
+| 17 | meta/muse-wonder | Meta Muse | minimal | 77.50 | 3.62 | 70.70 | 81.87 | 10/10 | 0 | 0 | 237 |
+| 18 | x-ai/grok-4.5 | Grok | low | 77.02 | 2.38 | 73.64 | 81.07 | 10/10 | 0 | 0 | 704 |
+| 19 | x-ai/grok-4.7 | Grok | low | 77.02 | 2.31 | 73.56 | 81.33 | 10/10 | 0 | 0 | 753 |
+| 20 | x-ai/grok-4.20-multi-agent | Grok | low | 76.68 | 2.23 | 73.56 | 79.82 | 10/10 | 0 | 0 | 12316 |
+| 21 | google/gemini-3.5-flash | Gemini Flash | minimal | 76.56 | 2.57 | 71.71 | 80.13 | 10/10 | 0 | 0 | 0 |
+| 22 | x-ai/grok-4.20 | Grok | disabled | 75.58 | 2.03 | 71.53 | 78.71 | 10/10 | 0 | 0 | 0 |
+| 23 | openai/gpt-5.6-terra | GPT-5.6 | none | 75.57 | 1.60 | 72.94 | 78.75 | 10/10 | 0 | 0 | 0 |
+| 24 | meta/muse-spark-1.3 | Meta Muse | minimal | 75.07 | 3.77 | 68.61 | 80.67 | 10/10 | 0 | 0 | 279 |
+| 25 | meta/muse-glimmer-30b | Meta Muse | low | 74.82 | 1.71 | 72.37 | 77.68 | 10/10 | 0 | 0 | 290 |
+| 26 | x-ai/grok-4.3 | Grok | none | 74.64 | 3.52 | 69.51 | 79.96 | 10/10 | 0 | 0 | 0 |
 
 ## Appendix: words per trial
 
@@ -3643,3 +3649,115 @@ Score = Divergent Association Task (Olson et al., 2021): mean cosine distance of
 - run 8: **82.08** — 嫉妬, 螺旋, 彗星, 戸籍, レンガ, クラゲ, 唾液
 - run 9: **85.47** — クラゲ, 直角, 関税, 南京錠, 嫉妬, 余談, 前日
 - run 7: **82.90** — クラゲ, しゃっくり, 嫉妬, 戸籍, 畳, 楕円, 駄洒落
+
+### English · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 8: **89.37** — beetle, democracy, glacier, melody, scissors, grief, oxygen
+
+### 日本語 · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 8: **85.65** — 銀河, 羨望, 靴下, 明日, 法律, 苦味, キリン
+- run 6: **82.31** — 鯨, 椅子, 悲しみ, 明日, 北, 法律, 雷
+- run 1: **86.56** — 嫉妬, バケツ, 稲妻, 昨日, 平方, こんにゃく, 昼寝
+- run 4: **85.11** — はさみ, 嫉妬, 雷, キリン, 法律, 豆腐, 明日
+
+### English · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 1: **86.15** — galaxy, spoon, grief, cactus, symphony, democracy, rust
+
+### 日本語 · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 0: **80.03** — 靴下, 雷, 嫉妬, 豆腐, 確率, 恐竜, 鏡
+
+### English · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 0: **87.33** — octopus, grief, glacier, toaster, symphony, velocity, cabbage
+
+### 日本語 · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 9: **83.17** — カエル, 雷, 嫉妬, ハサミ, 昨日, 税金, 赤
+
+### English · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 3: **85.84** — refrigerator, grief, pebble, symphony, giraffe, democracy, soup
+
+### 日本語 · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 7: **81.68** — くじら, ハサミ, 悲しみ, 明日, 税金, 雷, 音楽
+
+### English · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 6: **86.52** — algebra, volcano, jealousy, squirrel, spoon, symphony, fog
+
+### 日本語 · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 5: **83.63** — ペンチ, 怒り, 塩, 彗星, 瞬間, 親戚, 迷路
+
+### English · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 7: **86.82** — galaxy, grief, toaster, frog, justice, tornado, violin
+
+### 日本語 · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 3: **84.89** — 砂時計, 悔しさ, クラゲ, 雷, パスワード, 味噌, 睡眠
+
+### English · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 2: **84.68** — ocean, democracy, hammer, melody, spider, algebra, grief
+- run 9: **84.79** — grief, spoon, glacier, democracy, squirrel, melody, velvet
+- run 5: **83.82** — elephant, justice, volcano, symphony, toothbrush, galaxy, sadness
+- run 4: **88.19** — galaxy, microbe, justice, accordion, hurricane, grief, pebble
+
+### 日本語 · google/gemini-4-argon · no-thinking (effort=low)
+
+- run 2: **82.19** — 石鹸, 悲しみ, 明日, 竜巻, 法律, カラス, 偶数
+
+### English · google/gemini-4-argon · thinking (effort=high)
+
+- run 3: **88.61** — giraffe, volcano, galaxy, scissors, mustard, grief, democracy
+- run 7: **88.68** — algebra, cinnamon, glacier, jealousy, melody, pajamas, spider
+- run 8: **90.34** — grief, jellyfish, asteroid, democracy, cinnamon, melody, ankle
+
+### 日本語 · google/gemini-4-argon · thinking (effort=high)
+
+- run 1: **80.53** — クジラ, 靴下, 税金, 嫉妬, 明日, 旋律, 砂糖
+
+### English · google/gemini-4-argon · thinking (effort=high)
+
+- run 4: **91.32** — comet, wheelbarrow, grief, squid, lasagna, melody, salary
+- run 1: **89.00** — comet, giraffe, jealousy, algebra, sofa, garlic, forehead
+- run 2: **92.44** — vinegar, bankruptcy, jellyfish, jealousy, tractor, trombone, galaxy
+- run 9: **92.61** — verdict, cinnamon, geometry, trombone, porcupine, glacier, ankle
+
+### 日本語 · google/gemini-4-argon · thinking (effort=high)
+
+- run 4: **82.72** — 鯨, 嫉妬, 鋏, 明日, 旋律, 法律, 砂糖
+- run 8: **81.67** — 醤油, 憲法, 踵, 交響曲, 歯車, 嫉妬, サボテン
+- run 3: unscorable (0 valid) — 
+
+### English · google/gemini-4-argon · thinking (effort=high)
+
+- run 0: **88.98** — volcano, jealousy, penguin, democracy, garlic, symphony, ankle
+
+### 日本語 · google/gemini-4-argon · thinking (effort=high)
+
+- run 9: **78.87** — 蟻, 椅子, 爪, 霧, 黄色, 旋律, 嫉妬
+- run 0: **77.96** — カマキリ, 歯車, 嫉妬, 火山, 税金, 砂糖, くしゃみ
+
+### English · google/gemini-4-argon · thinking (effort=high)
+
+- run 5: **90.74** — cinnamon, glacier, symphony, wheelbarrow, algebra, jealousy, democracy
+
+### 日本語 · google/gemini-4-argon · thinking (effort=high)
+
+- run 7: **81.16** — 隕石, キリン, 豆腐, のこぎり, 靴下, くしゃみ, 嫉妬
+
+### English · google/gemini-4-argon · thinking (effort=high)
+
+- run 6: unscorable (0 valid) — 
+
+### 日本語 · google/gemini-4-argon · thinking (effort=high)
+
+- run 5: unscorable (0 valid) — 
+- run 6: unscorable (0 valid) — 
+- run 2: unscorable (0 valid) — 

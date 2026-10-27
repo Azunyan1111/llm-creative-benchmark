@@ -1089,3 +1089,47 @@
 11:42:03 [ja] meta/muse-wonder                 thinking    run=1 score=78.83 reasoning_tokens=6035 [砂糖 雷 孤独 椅子 蝶 戦争 風邪]
 11:42:03 [ja] meta/muse-spark-1.3              thinking    run=4 score=76.89 reasoning_tokens=14422 [太陽 墓 爪 祭り 絹 約束 鯨]
 11:42:03 planned=160 skipped=80 done=80 errors=0 unscorable=1
+16:02:33 [en] 104594 vectors loaded
+16:02:33 [ja] 500000 vectors loaded
+16:02:33 planned 40 jobs, 0 already done, 40 to run
+16:02:36 [en] google/gemini-4-argon            no-thinking run=8 score=89.37 reasoning_tokens=0 [beetle democracy glacier melody scissors grief oxygen]
+16:02:36 [ja] google/gemini-4-argon            no-thinking run=8 score=85.65 reasoning_tokens=0 [銀河 羨望 靴下 明日 法律 苦味 キリン]
+16:02:36 [ja] google/gemini-4-argon            no-thinking run=6 score=82.31 reasoning_tokens=0 [鯨 椅子 悲しみ 明日 北 法律 雷]
+16:02:37 [ja] google/gemini-4-argon            no-thinking run=1 score=86.56 reasoning_tokens=0 [嫉妬 バケツ 稲妻 昨日 平方 こんにゃく 昼寝]
+16:02:37 [ja] google/gemini-4-argon            no-thinking run=4 score=85.11 reasoning_tokens=0 [はさみ 嫉妬 雷 キリン 法律 豆腐 明日]
+16:02:37 [en] google/gemini-4-argon            no-thinking run=1 score=86.15 reasoning_tokens=0 [galaxy spoon grief cactus symphony democracy rust]
+16:02:37 [ja] google/gemini-4-argon            no-thinking run=0 score=80.03 reasoning_tokens=0 [靴下 雷 嫉妬 豆腐 確率 恐竜 鏡]
+16:02:37 [en] google/gemini-4-argon            no-thinking run=0 score=87.33 reasoning_tokens=0 [octopus grief glacier toaster symphony velocity cabbage]
+16:02:37 [ja] google/gemini-4-argon            no-thinking run=9 score=83.17 reasoning_tokens=0 [カエル 雷 嫉妬 ハサミ 昨日 税金 赤]
+16:02:38 [en] google/gemini-4-argon            no-thinking run=3 score=85.84 reasoning_tokens=0 [refrigerator grief pebble symphony giraffe democracy soup]
+16:02:38 [ja] google/gemini-4-argon            no-thinking run=7 score=81.68 reasoning_tokens=0 [くじら ハサミ 悲しみ 明日 税金 雷 音楽]
+16:02:38 [en] google/gemini-4-argon            no-thinking run=6 score=86.52 reasoning_tokens=0 [algebra volcano jealousy squirrel spoon symphony fog]
+16:02:38 [ja] google/gemini-4-argon            no-thinking run=5 score=83.63 reasoning_tokens=0 [ペンチ 怒り 塩 彗星 瞬間 親戚 迷路]
+16:02:38 [en] google/gemini-4-argon            no-thinking run=7 score=86.82 reasoning_tokens=0 [galaxy grief toaster frog justice tornado violin]
+16:02:38 [ja] google/gemini-4-argon            no-thinking run=3 score=84.89 reasoning_tokens=0 [砂時計 悔しさ クラゲ 雷 パスワード 味噌 睡眠]
+16:02:39 [en] google/gemini-4-argon            no-thinking run=2 score=84.68 reasoning_tokens=0 [ocean democracy hammer melody spider algebra grief]
+16:02:41 [en] google/gemini-4-argon            no-thinking run=9 score=84.79 reasoning_tokens=0 [grief spoon glacier democracy squirrel melody velvet]
+16:02:42 [en] google/gemini-4-argon            no-thinking run=5 score=83.82 reasoning_tokens=0 [elephant justice volcano symphony toothbrush galaxy sadness]
+16:02:43 [en] google/gemini-4-argon            no-thinking run=4 score=88.19 reasoning_tokens=0 [galaxy microbe justice accordion hurricane grief pebble]
+16:02:43 [ja] google/gemini-4-argon            no-thinking run=2 score=82.19 reasoning_tokens=0 [石鹸 悲しみ 明日 竜巻 法律 カラス 偶数]
+16:03:05 [en] google/gemini-4-argon            thinking    run=3 score=88.61 reasoning_tokens=2241 [giraffe volcano galaxy scissors mustard grief democracy]
+16:03:05 [en] google/gemini-4-argon            thinking    run=7 score=88.68 reasoning_tokens=1843 [algebra cinnamon glacier jealousy melody pajamas spider]
+16:03:15 [en] google/gemini-4-argon            thinking    run=8 score=90.34 reasoning_tokens=2742 [grief jellyfish asteroid democracy cinnamon melody ankle]
+16:03:25 [ja] google/gemini-4-argon            thinking    run=1 score=80.53 reasoning_tokens=4027 [クジラ 靴下 税金 嫉妬 明日 旋律 砂糖]
+16:03:26 [en] google/gemini-4-argon            thinking    run=4 score=91.32 reasoning_tokens=3083 [comet wheelbarrow grief squid lasagna melody salary]
+16:03:43 [en] google/gemini-4-argon            thinking    run=1 score=89.00 reasoning_tokens=4465 [comet giraffe jealousy algebra sofa garlic forehead]
+16:03:43 [en] google/gemini-4-argon            thinking    run=2 score=92.44 reasoning_tokens=4581 [vinegar bankruptcy jellyfish jealousy tractor trombone galaxy]
+16:03:47 [en] google/gemini-4-argon            thinking    run=9 score=92.61 reasoning_tokens=4787 [verdict cinnamon geometry trombone porcupine glacier ankle]
+16:03:55 [ja] google/gemini-4-argon            thinking    run=4 score=82.72 reasoning_tokens=6054 [鯨 嫉妬 鋏 明日 旋律 法律 砂糖]
+16:03:57 [ja] google/gemini-4-argon            thinking    run=8 score=81.67 reasoning_tokens=5791 [醤油 憲法 踵 交響曲 歯車 嫉妬 サボテン]
+16:03:59 [ja] google/gemini-4-argon            thinking    run=3 unscorable (0 valid: [])
+16:04:02 [en] google/gemini-4-argon            thinking    run=0 score=88.98 reasoning_tokens=5894 [volcano jealousy penguin democracy garlic symphony ankle]
+16:04:20 [ja] google/gemini-4-argon            thinking    run=9 score=78.87 reasoning_tokens=6215 [蟻 椅子 爪 霧 黄色 旋律 嫉妬]
+16:04:40 [ja] google/gemini-4-argon            thinking    run=0 score=77.96 reasoning_tokens=8417 [カマキリ 歯車 嫉妬 火山 税金 砂糖 くしゃみ]
+16:05:03 [en] google/gemini-4-argon            thinking    run=5 score=90.74 reasoning_tokens=10345 [cinnamon glacier symphony wheelbarrow algebra jealousy democracy]
+16:05:17 [ja] google/gemini-4-argon            thinking    run=7 score=81.16 reasoning_tokens=8739 [隕石 キリン 豆腐 のこぎり 靴下 くしゃみ 嫉妬]
+16:06:30 [en] google/gemini-4-argon            thinking    run=6 unscorable (0 valid: [])
+16:06:34 [ja] google/gemini-4-argon            thinking    run=5 unscorable (0 valid: [])
+16:07:27 [ja] google/gemini-4-argon            thinking    run=6 unscorable (0 valid: [])
+16:08:58 [ja] google/gemini-4-argon            thinking    run=2 unscorable (0 valid: [])
+16:08:58 planned=40 skipped=0 done=40 errors=0 unscorable=5

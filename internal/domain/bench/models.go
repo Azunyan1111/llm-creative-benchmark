@@ -15,6 +15,8 @@ var DefaultModels = []ModelSpec{
 	{"google/gemini-3.6-flash", "Gemini Flash"},
 	{"google/gemini-3.5-flash", "Gemini Flash"},
 	{"google/gemini-3.5-flash-lite", "Gemini Flash"},
+	// Gemini Argon
+	{"google/gemini-4-argon", "Gemini Argon"},
 	// Grok >= 4.2 (incl. multi-agent)
 	{"x-ai/grok-4.20", "Grok"},
 	{"x-ai/grok-4.20-multi-agent", "Grok"},
