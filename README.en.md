@@ -1,27 +1,27 @@
 # llm-creative-benchmark
 
-A creativity benchmark for LLMs based on the Divergent Association Task (DAT). Through OpenRouter, 26 models are asked for 10 nouns that are as different from each other as possible; the score is the mean cosine distance between word embeddings of the first 7 valid words × 100. Each model is ranked in two arms (thinking / no-thinking) and two languages (English / Japanese). Method and usage follow the results.
+A creativity benchmark for LLMs based on the Divergent Association Task (DAT). Through OpenRouter, 29 models are asked for 10 nouns that are as different from each other as possible; the score is the mean cosine distance between word embeddings of the first 7 valid words × 100. Each model is ranked in two arms (thinking / no-thinking) and two languages (English / Japanese). Method and usage follow the results.
 
 ## Results
 
-Measured on 2026-10-27: 26 models × 2 languages × 2 arms × 10 runs = 1,040 trials, $15.71 in total. Top 10 per arm (mean ± SD over 10 runs; humans average ≈ 78, 95 is very high):
+Measured on 2026-10-27: 26 models × 2 languages × 2 arms × 10 runs = 1,040 trials; 3 Gemini 4 models (120 trials) were added on 2026-11-21; Carbon's 20 thinking trials were re-run with a 64,000-token budget. 29 models, 1,160 trials, $24.36 in total including the re-run. Top 10 per arm (mean ± SD over 10 runs; humans average ≈ 78, 95 is very high):
 
 | # | EN thinking | EN no-thinking | JA thinking | JA no-thinking |
 |---:|---|---|---|---|
-| 1 | gemini-4-argon 90.3 ± 1.6 | gemini-3.5-flash 88.0 ± 2.0 | gpt-6-astra 82.0 ± 1.5 | gemini-4-argon 83.5 ± 2.0 |
-| 2 | gemini-3.8-flash 89.2 ± 2.8 | gemini-3.6-flash 87.8 ± 4.1 | gemini-3.8-flash 81.5 ± 1.9 | gemini-3.8-flash 82.8 ± 2.6 |
-| 3 | claude-opus-5.5 88.1 ± 1.4 | gemini-3.8-flash 87.6 ± 3.0 | gemini-3.5-flash 81.3 ± 1.5 | gpt-6.1-sol 81.6 ± 0.9 |
-| 4 | gemini-3.7-flash 87.7 ± 1.2 | claude-opus-5.5 87.3 ± 0.3 | gemini-3.7-flash 81.1 ± 1.9 | gpt-6-astra 81.6 ± 1.7 |
-| 5 | gpt-6.1-sol 87.3 ± 2.0 | gemini-3.7-flash 87.1 ± 2.9 | gpt-6.1-sol 80.7 ± 1.9 | gemini-3.7-flash 80.6 ± 1.7 |
-| 6 | claude-sonnet-5.5 86.6 ± 2.3 | gemini-4-argon 86.4 ± 1.7 | gemini-3.6-flash 80.7 ± 2.3 | claude-sonnet-5.5 80.5 ± 1.6 |
-| 7 | gemini-3.6-flash 86.6 ± 2.1 | gpt-6-astra 86.3 ± 2.5 | gpt-5.6-sol 80.6 ± 2.0 | claude-opus-5.5 79.7 ± 1.4 |
-| 8 | gpt-6-astra 86.4 ± 1.5 | claude-sonnet-5.5 86.1 ± 2.9 | gemini-4-argon 80.5 ± 1.8 | gpt-5.6-luna 79.6 ± 1.0 |
-| 9 | claude-fable-5.1 86.1 ± 1.5 | claude-fable-5.1 85.9 ± 2.3 | muse-wonder 80.5 ± 1.4 | claude-fable-5 79.5 ± 2.5 |
-| 10 | muse-wonder 85.3 ± 3.4 | gpt-6.1-sol 85.2 ± 2.4 | claude-fable-5.1 80.5 ± 2.2 | gemini-3.6-flash 78.3 ± 1.6 |
+| 1 | gemini-4-carbon 92.9 ± 1.3 (8 runs, 64k budget) | gemini-3.5-flash 88.0 ± 2.0 | gpt-6-astra 82.0 ± 1.5 | gemini-4-argon 83.5 ± 2.0 |
+| 2 | gemini-4-argon 90.3 ± 1.6 | gemini-4-neon 87.9 ± 1.9 | gemini-3.8-flash 81.5 ± 1.9 | gemini-3.8-flash 82.8 ± 2.6 |
+| 3 | gemini-4-neon 90.2 ± 2.2 | gemini-3.6-flash 87.8 ± 4.1 | gemini-3.5-flash 81.3 ± 1.5 | gemini-4-carbon 82.7 ± 1.7 |
+| 4 | gemini-3.8-flash 89.2 ± 2.8 | gemini-3.8-flash 87.6 ± 3.0 | gemini-4-hydrogen 81.3 ± 2.7 | gpt-6.1-sol 81.6 ± 0.9 |
+| 5 | gemini-4-hydrogen 88.2 ± 1.3 | claude-opus-5.5 87.3 ± 0.3 | gemini-3.7-flash 81.1 ± 1.9 | gpt-6-astra 81.6 ± 1.7 |
+| 6 | claude-opus-5.5 88.1 ± 1.4 | gemini-3.7-flash 87.1 ± 2.9 | gemini-4-neon 80.9 ± 2.2 | gemini-3.7-flash 80.6 ± 1.7 |
+| 7 | gemini-3.7-flash 87.7 ± 1.2 | gemini-4-carbon 86.9 ± 2.7 | gpt-6.1-sol 80.7 ± 1.9 | gemini-4-neon 80.5 ± 1.4 |
+| 8 | gpt-6.1-sol 87.3 ± 2.0 | gemini-4-hydrogen 86.4 ± 2.7 | gemini-3.6-flash 80.7 ± 2.3 | claude-sonnet-5.5 80.5 ± 1.6 |
+| 9 | claude-sonnet-5.5 86.6 ± 2.3 | gemini-4-argon 86.4 ± 1.7 | gpt-5.6-sol 80.6 ± 2.0 | gemini-4-hydrogen 80.0 ± 2.6 |
+| 10 | gemini-3.6-flash 86.6 ± 2.1 | gpt-6-astra 86.3 ± 2.5 | gemini-4-argon 80.5 ± 1.8 | claude-opus-5.5 79.7 ± 1.4 |
 
 Full tables, per-arm rankings and the words each model produced are in [results/ranking.md](results/ranking.md); aggregates in [results/summary.json](results/summary.json); raw data in [results/trials.jsonl](results/trials.jsonl).
 
-Caveats: most models beat the human average (≈ 78) in English; Japanese scores run 5–7 points lower and are not comparable across languages. Thinking vs. no-thinking differences are mostly within one SD. `meta/muse-wonder` and `meta/muse-spark-1.3` failed every trial in the first pass because the account's ZDR (Zero Data Retention) setting excluded their only endpoint; after the setting was switched off, re-running `run` retried only those 80 trials (`muse-wonder` is the strongest Muse model: 85.3 in English thinking, rank 10). `claude-sonnet-5.5` reported 0 reasoning tokens even at effort `high`; `claude-opus-5.5` and `claude-fable-5` without thinking produced only 4 distinct word lists in 10 runs (SD 0.1–0.3). `google/gemini-4-argon` (Gemini 4 Argon) was added after the other 25 models and measured with the same `run` command (40 trials, $1.46). Its reasoning is mandatory and only `low`/`medium`/`high` are accepted, so the no-thinking arm uses `low`, which reported 0 reasoning tokens. It ranks first in English thinking (90.3) and in Japanese no-thinking (83.5), but 5 of its 20 thinking trials are unscorable: 4 (1 English, 3 Japanese) spent the whole 16,000-token budget on reasoning and returned empty content, and 1 Japanese trial came back from the provider with finish_reason `error` and no content; its Japanese thinking mean (80.5) is over the remaining 6 runs. Seven trials are unscorable in total: the 5 Argon trials above, a Japanese `gpt-5.6-luna` no-thinking reply that was a non-word string, and a Japanese `meta/muse-spark-1.3` thinking reply that spent the whole 16,000-token budget on reasoning and returned empty content.
+Caveats: most models beat the human average (≈ 78) in English; Japanese scores run 5–7 points lower and are not comparable across languages. Thinking vs. no-thinking differences are mostly within one SD. `meta/muse-wonder` and `meta/muse-spark-1.3` failed every trial in the first pass because the account's ZDR (Zero Data Retention) setting excluded their only endpoint; after the setting was switched off, re-running `run` retried only those 80 trials (`muse-wonder` is the strongest Muse model: 85.3 in English thinking, rank 10). `claude-sonnet-5.5` reported 0 reasoning tokens even at effort `high`; `claude-opus-5.5` and `claude-fable-5` without thinking produced only 4 distinct word lists in 10 runs (SD 0.1–0.3). `google/gemini-4-argon` (Gemini 4 Argon) was added after the other 25 models and measured with the same `run` command (40 trials, $1.46). Its reasoning is mandatory and only `low`/`medium`/`high` are accepted, so the no-thinking arm uses `low`, which reported 0 reasoning tokens. It ranks first in English thinking (90.3) and in Japanese no-thinking (83.5), but 5 of its 20 thinking trials are unscorable: 4 (1 English, 3 Japanese) spent the whole 16,000-token budget on reasoning and returned empty content, and 1 Japanese trial came back from the provider with finish_reason `error` and no content; its Japanese thinking mean (80.5) is over the remaining 6 runs. `google/gemini-4-carbon`, `gemini-4-hydrogen` and `gemini-4-neon` (Gemini 4 Carbon, Hydrogen, Neon) were measured on 2026-11-21 with the same `run` command (120 trials, $5.70). All three require reasoning and offer no `none` or `minimal` effort, so their no-thinking arm uses `low`. Neon is third (90.2) and Hydrogen fifth (88.2) in English thinking; Carbon is third in Japanese no-thinking (82.7). Hydrogen and Neon still spend 666–912 reasoning tokens per reply on average at `low`. At the 16,000-token budget used for every other model, all 20 Carbon thinking trials were unscorable: each spent the whole budget on reasoning and returned empty content (finish_reason `length`). Those 20 trials were therefore re-run with a 64,000-token budget, and the ranking uses the re-run. In English 8 of 10 were scored, averaging 92.9 (first in English thinking), with about 32,500 reasoning tokens and 7–36 minutes per reply; the other 2 were one client timeout (40 minutes) and one finish_reason `error`. In Japanese only 1 run was scored (80.1): 8 hit the 40-minute timeout and 1 returned `error`. Carbon's English thinking score was measured with a larger budget than any other model, so it is not a like-for-like comparison. The original 16,000-token trials stay in results/trials.jsonl; `report` uses the last trial appended for each job (the 64,000-token one). The 16,000-token trials cost $3.21 and the re-run $2.94; the 11 timeout and `error` trials are recorded at $0, but whether they were actually billed was not checked. Gemini Omni 1.1 Flash and 1.2 Flash were also added to OpenRouter in November but are video generation models and were not measured. 9 trials are unscorable and 9 got no reply (errors), all excluded from the means. The errors are all Carbon thinking timeouts; the unscorable ones are the 5 Argon trials above, the 2 Carbon thinking `error` replies, a Japanese `gpt-5.6-luna` no-thinking reply that was a non-word string, and a Japanese `meta/muse-spark-1.3` thinking reply that spent the whole 16,000-token budget on reasoning and returned empty content.
 
 ## Method
 
@@ -36,13 +36,13 @@ The scorer is a Go port of the reference implementation ([jayolson/divergent-ass
 
 Scores are comparable within a language only.
 
-**Arms.** `thinking` sends `reasoning.effort = high`. `no-thinking` sends `none` where the provider allows switching reasoning off, else `minimal`, else the weakest allowed effort (`low`). Many models (Claude 5.5, GPT-6, Gemini 3.5+ Flash, Grok 4.5+, Meta Muse) cannot disable reasoning at all; the effort actually used and the reasoning token count are recorded with every trial. `datbench plan` prints the assignment.
+**Arms.** `thinking` sends `reasoning.effort = high`. `no-thinking` sends `none` where the provider allows switching reasoning off, else `minimal`, else the weakest allowed effort (`low`). Many models (Claude 5.5, GPT-6, Gemini 3.5+ Flash, Gemini 4, Grok 4.5+, Meta Muse) cannot disable reasoning at all; the effort actually used and the reasoning token count are recorded with every trial. `datbench plan` prints the assignment.
 
 The prompt is the paper's participant instruction plus a one-word-per-line output format; the Japanese prompt is a translation. No temperature or sampling parameters are sent.
 
 ## Models
 
-GPT-5.6 (luna, sol, terra), GPT-6 astra, GPT-6.1 sol, Gemini 3.5–3.8 Flash (+3.5 Flash Lite), Gemini 4 Argon, Grok 4.20 / 4.20-multi-agent / 4.3 / 4.5 / 4.6 / 4.7, Meta Muse (wonder, spark-1.3, spark-open, glimmer-30b), Claude Fable 5 / 5.1, Claude Opus / Sonnet / Haiku 5.5.
+GPT-5.6 (luna, sol, terra), GPT-6 astra, GPT-6.1 sol, Gemini 3.5–3.8 Flash (+3.5 Flash Lite), Gemini 4 Argon / Carbon / Hydrogen / Neon, Grok 4.20 / 4.20-multi-agent / 4.3 / 4.5 / 4.6 / 4.7, Meta Muse (wonder, spark-1.3, spark-open, glimmer-30b), Claude Fable 5 / 5.1, Claude Opus / Sonnet / Haiku 5.5.
 
 ## Setup and usage
 

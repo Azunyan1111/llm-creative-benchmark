@@ -26,3 +26,20 @@ func TestDefaultModelsIncludeArgon(t *testing.T) {
 		t.Errorf("google/gemini-4-argon is missing from DefaultModels")
 	}
 }
+
+func TestDefaultModelsIncludeGemini4Lineup(t *testing.T) {
+	family := map[string]string{}
+	for _, m := range DefaultModels {
+		family[m.ID] = m.Family
+	}
+	for _, id := range []string{"google/gemini-4-carbon", "google/gemini-4-hydrogen", "google/gemini-4-neon"} {
+		f, ok := family[id]
+		if !ok {
+			t.Errorf("%s is missing from DefaultModels", id)
+			continue
+		}
+		if f != "Gemini 4" {
+			t.Errorf("%s family = %q, want %q", id, f, "Gemini 4")
+		}
+	}
+}

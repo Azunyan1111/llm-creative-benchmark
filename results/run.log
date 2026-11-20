@@ -1133,3 +1133,154 @@
 16:07:27 [ja] google/gemini-4-argon            thinking    run=6 unscorable (0 valid: [])
 16:08:58 [ja] google/gemini-4-argon            thinking    run=2 unscorable (0 valid: [])
 16:08:58 planned=40 skipped=0 done=40 errors=0 unscorable=5
+00:52:29 [en] 104594 vectors loaded
+00:52:29 [ja] 500000 vectors loaded
+00:52:29 planned 120 jobs, 0 already done, 120 to run
+00:52:35 [en] google/gemini-4-carbon           no-thinking run=0 score=81.82 reasoning_tokens=0 [frog justice spoon hurricane melody velvet century]
+00:52:36 [en] google/gemini-4-hydrogen         no-thinking run=0 score=89.61 reasoning_tokens=809 [justice cactus blizzard lantern vinegar eyelash melody]
+00:52:37 [en] google/gemini-4-neon             no-thinking run=0 score=88.31 reasoning_tokens=805 [boredom octopus comet cinnamon zipper trumpet chimney]
+00:52:41 [ja] google/gemini-4-carbon           no-thinking run=0 score=82.51 reasoning_tokens=0 [消しゴム 嫉妬 銀河 法律 塩 明日 狸]
+00:52:43 [en] google/gemini-4-hydrogen         thinking    run=0 score=87.13 reasoning_tokens=1751 [jealousy glacier broccoli eyebrow symphony escalator octopus]
+00:52:46 [ja] google/gemini-4-hydrogen         no-thinking run=0 score=82.41 reasoning_tokens=625 [嫉妬 歯車 鯨 醤油 昨日 苔 雷]
+00:52:55 [ja] google/gemini-4-neon             no-thinking run=0 score=81.70 reasoning_tokens=856 [嫉妬 銀河 カマキリ 釘 味噌 肘 税金]
+00:53:03 [en] google/gemini-4-neon             thinking    run=0 score=89.03 reasoning_tokens=3656 [glacier mosquito banjo jealousy pancake eyebrow cathedral]
+00:53:06 [en] google/gemini-4-carbon           no-thinking run=1 score=89.12 reasoning_tokens=0 [elephant grief screwdriver melody glacier democracy mustard]
+00:53:17 [ja] google/gemini-4-neon             thinking    run=0 score=77.08 reasoning_tokens=4166 [ミミズ 憲法 キャラメル 隕石 エレベーター かかと のこぎり]
+00:53:18 [ja] google/gemini-4-hydrogen         thinking    run=0 score=84.20 reasoning_tokens=5235 [銀河 カマキリ 嫉妬 税金 胡椒 潜水艦 肘]
+00:53:22 [en] google/gemini-4-hydrogen         no-thinking run=1 score=85.27 reasoning_tokens=553 [elephant umbrella volcano democracy cinnamon ankle galaxy]
+00:53:24 [en] google/gemini-4-hydrogen         thinking    run=1 score=89.19 reasoning_tokens=2383 [accordion jealousy mosquito glacier cinnamon century alphabet]
+00:53:31 [en] google/gemini-4-neon             no-thinking run=1 score=84.47 reasoning_tokens=901 [whale envy hammer volcano cinnamon elbow century]
+00:53:44 [ja] google/gemini-4-carbon           no-thinking run=1 score=84.40 reasoning_tokens=0 [靴下 嫉妬 雷 豆腐 偶数 キリン 昨日]
+00:53:45 [en] google/gemini-4-neon             thinking    run=1 score=88.65 reasoning_tokens=3055 [curiosity octopus accordion comet pretzel eyelash century]
+00:53:54 [ja] google/gemini-4-hydrogen         no-thinking run=1 score=75.85 reasoning_tokens=869 [雷 靴 沈黙 鯨 塩 爪 橋]
+00:54:25 [ja] google/gemini-4-hydrogen         thinking    run=1 score=83.80 reasoning_tokens=4831 [嫉妬 彗星 象 錨 醤油 税金 いびき]
+00:54:33 [ja] google/gemini-4-neon             no-thinking run=1 score=82.74 reasoning_tokens=765 [嫉妬 釘 鯨 霧 豆腐 選挙 瞬間]
+00:55:18 [ja] google/gemini-4-neon             thinking    run=1 score=79.16 reasoning_tokens=10522 [彗星 税金 しゃっくり 豆腐 カンガルー バイオリン 靴下]
+00:55:23 [en] google/gemini-4-carbon           no-thinking run=2 score=89.97 reasoning_tokens=0 [glacier jealousy wrench spider symphony oatmeal democracy]
+00:55:41 [en] google/gemini-4-hydrogen         thinking    run=2 score=89.12 reasoning_tokens=2250 [glacier jealousy mosquito vinegar eyebrow century saxophone]
+00:55:44 [en] google/gemini-4-hydrogen         no-thinking run=2 score=84.98 reasoning_tokens=376 [glacier whisper democracy mosquito velvet midnight triangle]
+00:56:07 [en] google/gemini-4-neon             thinking    run=2 score=87.45 reasoning_tokens=2603 [asteroid octopus pineapple trampoline alibi eyelash pyramid]
+00:56:14 [en] google/gemini-4-neon             no-thinking run=2 score=88.71 reasoning_tokens=679 [symphony broccoli jealousy kangaroo skyscraper midnight wrench]
+00:57:07 [en] google/gemini-4-carbon           thinking    run=0 unscorable (0 valid: [])
+00:57:11 [ja] google/gemini-4-carbon           no-thinking run=2 score=84.09 reasoning_tokens=0 [後悔 蟻 鍵 雷 豆腐 音楽 規則]
+00:57:22 [en] google/gemini-4-carbon           thinking    run=1 unscorable (0 valid: [])
+00:57:26 [ja] google/gemini-4-hydrogen         no-thinking run=2 score=82.14 reasoning_tokens=376 [銀河 嫉妬 釘 酢 憲法 睡眠 蚊]
+00:57:30 [ja] google/gemini-4-carbon           thinking    run=0 unscorable (0 valid: [])
+00:57:39 [ja] google/gemini-4-neon             no-thinking run=2 score=79.46 reasoning_tokens=774 [嫉妬 餅 笛 鯨 税金 肘 苔]
+00:58:06 [ja] google/gemini-4-hydrogen         thinking    run=2 score=79.77 reasoning_tokens=7322 [蜘蛛 流星 嫉妬 矛盾 羊羹 祝日 靴下]
+00:58:09 [ja] google/gemini-4-neon             thinking    run=2 score=81.20 reasoning_tokens=4993 [クラゲ マヨネーズ 嫉妬 税金 隕石 まぶた 交差点]
+00:58:19 [en] google/gemini-4-carbon           no-thinking run=3 score=87.94 reasoning_tokens=0 [glacier jealousy wrench symphony fungus century velvet]
+00:58:25 [en] google/gemini-4-hydrogen         thinking    run=3 score=88.77 reasoning_tokens=2020 [jealousy octopus broccoli glacier envelope eyebrow funeral]
+00:58:26 [en] google/gemini-4-hydrogen         no-thinking run=3 score=84.96 reasoning_tokens=847 [boredom lightning vinegar kidney octopus ladder century]
+00:58:37 [ja] google/gemini-4-carbon           thinking    run=1 unscorable (0 valid: [])
+00:58:39 [en] google/gemini-4-neon             no-thinking run=3 score=88.22 reasoning_tokens=1126 [volcano mustard ankle symphony envelope jealousy mosquito]
+00:59:04 [en] google/gemini-4-neon             thinking    run=3 score=91.97 reasoning_tokens=4479 [jealousy mosquito glacier spaghetti trombone cathedral currency]
+00:59:11 [ja] google/gemini-4-carbon           no-thinking run=3 score=81.68 reasoning_tokens=1887 [鯨 車輪 勇気 税金 雷 膝 豆腐]
+00:59:15 [en] google/gemini-4-carbon           thinking    run=2 unscorable (0 valid: [])
+00:59:16 [ja] google/gemini-4-hydrogen         no-thinking run=3 score=79.88 reasoning_tokens=600 [宇宙 昆虫 豆腐 悲しみ 法律 音楽 昨日]
+00:59:24 [ja] google/gemini-4-neon             no-thinking run=3 score=80.02 reasoning_tokens=741 [矛盾 彗星 納豆 風船 鯨 肘 廊下]
+00:59:31 [ja] google/gemini-4-hydrogen         thinking    run=3 score=74.96 reasoning_tokens=3838 [蜘蛛 税金 蜂蜜 知恵 砂漠 靴下 雷]
+00:59:35 [en] google/gemini-4-carbon           no-thinking run=4 score=88.86 reasoning_tokens=0 [glacier jealousy wrench melody cabbage democracy spider]
+00:59:47 [en] google/gemini-4-hydrogen         thinking    run=4 score=86.08 reasoning_tokens=1369 [jealousy octopus cinnamon suitcase volcano symphony democracy]
+00:59:53 [en] google/gemini-4-hydrogen         no-thinking run=4 score=82.60 reasoning_tokens=879 [justice glacier mushroom spoon midnight symphony vinegar]
+01:00:10 [ja] google/gemini-4-neon             thinking    run=3 score=81.08 reasoning_tokens=6521 [彗星 嫉妬 選挙 こんにゃく カマキリ トランペット ミシン]
+01:00:13 [en] google/gemini-4-neon             thinking    run=4 score=93.77 reasoning_tokens=2325 [jealousy pretzel mosquito galaxy trombone election ankle]
+01:00:16 [en] google/gemini-4-neon             no-thinking run=4 score=87.65 reasoning_tokens=694 [jealousy comet pretzel octopus cathedral avalanche anvil]
+01:00:21 [ja] google/gemini-4-carbon           no-thinking run=4 score=80.86 reasoning_tokens=0 [銀河 靴下 嫉妬 豆腐 法律 砂漠 しゃっくり]
+01:01:05 [ja] google/gemini-4-hydrogen         thinking    run=4 score=80.94 reasoning_tokens=5259 [彗星 肘 戸籍 胡椒 クラゲ 時計 地震]
+01:01:09 [ja] google/gemini-4-hydrogen         no-thinking run=4 score=77.68 reasoning_tokens=421 [嫉妬 吹雪 歯車 鯨 永遠 洞窟 轟音]
+01:01:36 [ja] google/gemini-4-carbon           thinking    run=2 unscorable (0 valid: [])
+01:01:41 [ja] google/gemini-4-neon             thinking    run=4 score=78.84 reasoning_tokens=3628 [カマキリ オムライス ブルドーザー タンバリン 嫉妬 彗星 まつげ]
+01:01:45 [ja] google/gemini-4-neon             no-thinking run=4 score=78.69 reasoning_tokens=930 [嫉妬 蕎麦 歯車 鯨 砂漠 選挙 俳句]
+01:01:48 [en] google/gemini-4-carbon           no-thinking run=5 score=82.96 reasoning_tokens=0 [elephant justice volcano soup melody bicycle grief]
+01:02:02 [en] google/gemini-4-hydrogen         thinking    run=5 score=87.52 reasoning_tokens=2049 [nostalgia volcano octopus accordion cathedral cinnamon algebra]
+01:02:10 [en] google/gemini-4-hydrogen         no-thinking run=5 score=86.32 reasoning_tokens=920 [nostalgia octopus glacier vinegar umbrella century eyebrow]
+01:02:26 [en] google/gemini-4-carbon           thinking    run=3 unscorable (0 valid: [])
+01:02:33 [en] google/gemini-4-neon             thinking    run=5 score=90.10 reasoning_tokens=2378 [glacier jealousy mortgage cinnamon eyelash symphony mosquito]
+01:02:38 [en] google/gemini-4-neon             no-thinking run=5 score=85.03 reasoning_tokens=1269 [giraffe violin jealousy volcano onion century velvet]
+01:02:42 [ja] google/gemini-4-carbon           no-thinking run=5 score=84.02 reasoning_tokens=0 [釘 昨日 後悔 虹 税金 鯨 音楽]
+01:03:28 [en] google/gemini-4-carbon           thinking    run=4 unscorable (0 valid: [])
+01:03:34 [ja] google/gemini-4-hydrogen         no-thinking run=5 score=79.56 reasoning_tokens=700 [嫉妬 醤油 歯車 鯨 肘 選挙 雷]
+01:04:02 [ja] google/gemini-4-hydrogen         thinking    run=5 score=81.41 reasoning_tokens=12730 [嫉妬 吹雪 サボテン 餃子 肘 石炭 選挙]
+01:04:09 [ja] google/gemini-4-neon             no-thinking run=5 score=82.01 reasoning_tokens=688 [嫉妬 歯車 納豆 蜃気楼 くるぶし 税金 もぐら]
+01:04:12 [ja] google/gemini-4-neon             thinking    run=5 score=84.38 reasoning_tokens=4440 [未練 プリン カマキリ しゃっくり かくれんぼ 釘 偶数]
+01:04:15 [en] google/gemini-4-carbon           no-thinking run=6 score=87.23 reasoning_tokens=0 [giraffe thunder spoon democracy algebra moss sorrow]
+01:04:31 [en] google/gemini-4-hydrogen         thinking    run=6 score=86.69 reasoning_tokens=2467 [glacier jealousy accordion octopus garlic alphabet century]
+01:04:37 [en] google/gemini-4-hydrogen         no-thinking run=6 score=91.21 reasoning_tokens=948 [glacier grief trombone vinegar treaty octopus zipper]
+01:05:10 [ja] google/gemini-4-carbon           thinking    run=3 unscorable (0 valid: [])
+01:05:11 [en] google/gemini-4-neon             thinking    run=6 score=87.16 reasoning_tokens=3958 [eyebrow galaxy accordion pretzel walrus trampoline cactus]
+01:05:18 [en] google/gemini-4-neon             no-thinking run=6 score=87.98 reasoning_tokens=809 [justice octopus cinnamon cactus anvil ballet eyelash]
+01:05:21 [ja] google/gemini-4-carbon           no-thinking run=6 score=79.23 reasoning_tokens=0 [針 雷 正義 鯨 明日 砂糖 幽霊]
+01:05:35 [ja] google/gemini-4-carbon           thinking    run=4 unscorable (0 valid: [])
+01:05:39 [ja] google/gemini-4-hydrogen         no-thinking run=6 score=84.55 reasoning_tokens=618 [後悔 絨毯 鯨 豆腐 肘 去年 星]
+01:05:59 [ja] google/gemini-4-hydrogen         thinking    run=6 score=82.38 reasoning_tokens=5675 [カマキリ 豆腐 自転車 稲妻 税金 嫉妬 正午]
+01:06:08 [ja] google/gemini-4-neon             no-thinking run=6 score=79.42 reasoning_tokens=1012 [嫉妬 カマキリ 吹雪 餃子 くしゃみ 選挙 ハンマー]
+01:06:53 [ja] google/gemini-4-neon             thinking    run=6 score=81.26 reasoning_tokens=8578 [カマキリ うどん 消しゴム 砂漠 嫉妬 税金 交響曲]
+01:07:09 [en] google/gemini-4-carbon           no-thinking run=7 score=86.75 reasoning_tokens=765 [octopus justice scissors glacier onion century sofa]
+01:07:20 [en] google/gemini-4-hydrogen         thinking    run=7 score=90.29 reasoning_tokens=1547 [ankle jealousy glacier accordion treason vinegar century]
+01:07:24 [en] google/gemini-4-carbon           thinking    run=5 unscorable (0 valid: [])
+01:07:26 [en] google/gemini-4-hydrogen         no-thinking run=7 score=83.81 reasoning_tokens=941 [justice hurricane cactus pyramid century vinegar symphony]
+01:07:34 [en] google/gemini-4-neon             no-thinking run=7 score=90.15 reasoning_tokens=865 [justice cactus violin elbow pretzel comet submarine]
+01:07:35 [ja] google/gemini-4-carbon           thinking    run=5 unscorable (0 valid: [])
+01:07:39 [ja] google/gemini-4-carbon           no-thinking run=7 score=83.16 reasoning_tokens=0 [砂 嫉妬 三角形 蛙 昨日 法律 雷]
+01:07:55 [en] google/gemini-4-neon             thinking    run=7 score=90.39 reasoning_tokens=3601 [nostalgia pelican pretzel eyebrow comet trombone cardigan]
+01:08:00 [ja] google/gemini-4-hydrogen         no-thinking run=7 score=78.24 reasoning_tokens=749 [砂漠 嫉妬 豆腐 雷 鯨 永遠 歯車]
+01:08:22 [ja] google/gemini-4-hydrogen         thinking    run=7 score=82.88 reasoning_tokens=7171 [銀河 クラゲ トウモロコシ 嫉妬 選挙 交差点 アイロン]
+01:08:28 [ja] google/gemini-4-neon             no-thinking run=7 score=80.01 reasoning_tokens=589 [嫉妬 傘 銀河 カマキリ 味噌 肘 選挙]
+01:08:53 [ja] google/gemini-4-neon             thinking    run=7 score=80.61 reasoning_tokens=6291 [銀河 くるぶし ヨーグルト クラゲ 憲法 火曜日 バイオリン]
+01:09:05 [en] google/gemini-4-carbon           no-thinking run=8 score=85.82 reasoning_tokens=0 [elephant justice glacier toaster melody grief pebble]
+01:09:27 [en] google/gemini-4-carbon           thinking    run=6 unscorable (0 valid: [])
+01:09:30 [en] google/gemini-4-hydrogen         thinking    run=8 score=88.24 reasoning_tokens=3769 [boredom mosquito oatmeal symphony ankle umbrella grammar]
+01:09:33 [en] google/gemini-4-hydrogen         no-thinking run=8 score=87.49 reasoning_tokens=685 [grief glacier mosquito umbrella vinegar eyebrow century]
+01:09:40 [en] google/gemini-4-neon             no-thinking run=8 score=87.87 reasoning_tokens=747 [jealousy glacier anvil octopus cinnamon century melody]
+01:09:57 [ja] google/gemini-4-carbon           thinking    run=6 unscorable (0 valid: [])
+01:09:57 [en] google/gemini-4-neon             thinking    run=8 score=91.05 reasoning_tokens=3093 [jealousy yogurt mosquito comet democracy eyebrow algebra]
+01:10:03 [ja] google/gemini-4-carbon           no-thinking run=8 score=82.13 reasoning_tokens=0 [靴下 雷 嫉妬 豆腐 数字 鯨 明日]
+01:10:09 [ja] google/gemini-4-hydrogen         no-thinking run=8 score=78.91 reasoning_tokens=788 [銀河 歯車 矛盾 鯨 苔 酢 睡眠]
+01:10:19 [ja] google/gemini-4-hydrogen         thinking    run=8 score=80.16 reasoning_tokens=3215 [カマキリ 嫉妬 靴下 雷 税金 酢 楽譜]
+01:10:29 [ja] google/gemini-4-neon             no-thinking run=8 score=81.57 reasoning_tokens=909 [嫉妬 ブランコ 醤油 雷 鎖骨 カマキリ 選挙]
+01:10:43 [ja] google/gemini-4-neon             thinking    run=8 score=82.43 reasoning_tokens=3838 [税金 嫉妬 彗星 カマキリ ドーナツ エレベーター 肘]
+01:10:55 [en] google/gemini-4-carbon           no-thinking run=9 score=88.32 reasoning_tokens=0 [glacier melody scissors envy mushroom democracy galaxy]
+01:11:18 [en] google/gemini-4-hydrogen         thinking    run=9 score=88.72 reasoning_tokens=3619 [gratitude bankruptcy alphabet blizzard galaxy octopus cinnamon]
+01:11:24 [en] google/gemini-4-hydrogen         no-thinking run=9 score=88.11 reasoning_tokens=857 [chaos octopus glacier accordion cinnamon decade wedding]
+01:11:51 [en] google/gemini-4-carbon           thinking    run=7 unscorable (0 valid: [])
+01:12:02 [en] google/gemini-4-neon             no-thinking run=9 score=90.29 reasoning_tokens=1225 [debt octopus mitten pretzel corridor comet grief]
+01:12:05 [en] google/gemini-4-neon             thinking    run=9 score=92.38 reasoning_tokens=4516 [jealousy pretzel glacier mosquito trombone bankruptcy toothbrush]
+01:12:17 [ja] google/gemini-4-carbon           no-thinking run=9 score=84.47 reasoning_tokens=0 [くじら 後悔 雷 数字 靴下 昨日 秘密]
+01:13:02 [ja] google/gemini-4-hydrogen         thinking    run=9 score=82.29 reasoning_tokens=7017 [うどん 銀河 くるぶし サボテン 法律 勇気 ギター]
+01:13:08 [ja] google/gemini-4-hydrogen         no-thinking run=9 score=81.00 reasoning_tokens=917 [睡眠 嫉妬 歯車 鯨 塩 契約 洞窟]
+01:13:56 [ja] google/gemini-4-neon             thinking    run=9 score=83.37 reasoning_tokens=5877 [嫉妬 税金 彗星 モグラ 餃子 まつげ のこぎり]
+01:14:03 [en] google/gemini-4-carbon           thinking    run=8 unscorable (0 valid: [])
+01:14:07 [ja] google/gemini-4-neon             no-thinking run=9 score=79.63 reasoning_tokens=1034 [嫉妬 歯車 醤油 銀河 鎖骨 選挙 絨毯]
+01:14:54 [ja] google/gemini-4-carbon           thinking    run=8 unscorable (0 valid: [])
+01:15:02 [ja] google/gemini-4-carbon           thinking    run=7 unscorable (0 valid: [])
+01:15:13 [en] google/gemini-4-carbon           thinking    run=9 unscorable (0 valid: [])
+01:19:04 [ja] google/gemini-4-carbon           thinking    run=9 unscorable (0 valid: [])
+01:19:04 planned=120 skipped=0 done=120 errors=0 unscorable=20
+06:07:01 [en] 104594 vectors loaded
+06:07:01 planned 1 jobs, 0 already done, 1 to run
+06:26:51 [en] google/gemini-4-carbon           thinking    run=0 score=94.59 reasoning_tokens=30311 [koala yogurt asteroid trombone taxation jealousy syllable]
+06:26:51 planned=1 skipped=0 done=1 errors=0 unscorable=0
+06:27:05 [en] 104594 vectors loaded
+06:27:05 [ja] 500000 vectors loaded
+06:27:05 planned 20 jobs, 1 already done, 19 to run
+06:34:06 [en] google/gemini-4-carbon           thinking    run=4 score=92.32 reasoning_tokens=27814 [giraffe treaty mattress meteor jealousy bulldozer grammar]
+06:36:47 [en] google/gemini-4-carbon           thinking    run=5 unscorable (0 valid: [])
+06:36:47 [ja] google/gemini-4-carbon           thinking    run=4 unscorable (0 valid: [])
+06:45:27 [en] google/gemini-4-carbon           thinking    run=6 score=93.42 reasoning_tokens=33211 [giraffe asteroid lasagna jealousy algebra election tambourine]
+06:56:31 [en] google/gemini-4-carbon           thinking    run=3 score=90.96 reasoning_tokens=39257 [giraffe ketchup cello meteor democracy jealousy wheelbarrow]
+07:03:58 [en] google/gemini-4-carbon           thinking    run=1 score=93.98 reasoning_tokens=24273 [broccoli algebra mattress comet sarcasm pelican treaty]
+07:05:20 [en] google/gemini-4-carbon           thinking    run=7 score=93.63 reasoning_tokens=38797 [giraffe galaxy jealousy pension ketchup violin forklift]
+07:07:19 [ja] google/gemini-4-carbon           thinking    run=0 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:07:19 [en] google/gemini-4-carbon           thinking    run=2 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:07:19 [ja] google/gemini-4-carbon           thinking    run=1 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:07:19 [ja] google/gemini-4-carbon           thinking    run=2 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:07:19 [ja] google/gemini-4-carbon           thinking    run=3 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:13:30 [en] google/gemini-4-carbon           thinking    run=8 score=91.32 reasoning_tokens=35891 [giraffe pliers bagel jealousy comet melody democracy]
+07:14:22 [ja] google/gemini-4-carbon           thinking    run=5 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:15:30 [en] google/gemini-4-carbon           thinking    run=9 score=93.36 reasoning_tokens=30452 [broccoli algebra walrus bankruptcy trombone asteroid jealousy]
+07:17:03 [ja] google/gemini-4-carbon           thinking    run=6 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:36:45 [ja] google/gemini-4-carbon           thinking    run=7 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:43:44 [ja] google/gemini-4-carbon           thinking    run=8 score=80.08 reasoning_tokens=33558 [隕石 コアラ ことわざ 税金 ミシン 水泳 うどん]
+07:47:33 [ja] google/gemini-4-carbon           thinking    run=9 ERROR context deadline exceeded (Client.Timeout or context cancellation while reading body)
+07:47:33 planned=20 skipped=1 done=19 errors=9 unscorable=2

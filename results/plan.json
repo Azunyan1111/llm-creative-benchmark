@@ -1,12 +1,40 @@
 [
   {
-    "id": "google/gemini-4-argon",
-    "family": "Gemini Argon",
+    "id": "google/gemini-4-carbon",
+    "family": "Gemini 4",
     "reasoning_mandatory": true,
     "supported_efforts": [
       "low",
       "medium",
       "high"
+    ],
+    "thinking_effort": "high",
+    "no_thinking_effort": "low",
+    "no_thinking_is_true_off": false
+  },
+  {
+    "id": "google/gemini-4-hydrogen",
+    "family": "Gemini 4",
+    "reasoning_mandatory": true,
+    "supported_efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
+    ],
+    "thinking_effort": "high",
+    "no_thinking_effort": "low",
+    "no_thinking_is_true_off": false
+  },
+  {
+    "id": "google/gemini-4-neon",
+    "family": "Gemini 4",
+    "reasoning_mandatory": true,
+    "supported_efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh"
     ],
     "thinking_effort": "high",
     "no_thinking_effort": "low",
